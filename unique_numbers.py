@@ -1,6 +1,5 @@
-#10 inputs, print all don't have duplicate
+numbers = [float(input(f"Enter number {i + 1}: "))for i in range(10)]
 
-#ask for 0 numbers
-#store
-#remove numbers that have duplicate
-#print output
+unique_numbers = [num for num in numbers if numbers.count(num) == 1]
+
+print(unique_numbers)
