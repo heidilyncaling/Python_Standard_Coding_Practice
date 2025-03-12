@@ -1,7 +1,9 @@
-#ask for num
+numbers = []
 
-#look for lowest
-
-#stop when invalid input
-
-#print lowest
+while True: 
+    try:
+        num = float(input("Enter a number: "))
+        numbers.append(num)
+    except ValueError:
+            break
+print(min(numbers))
