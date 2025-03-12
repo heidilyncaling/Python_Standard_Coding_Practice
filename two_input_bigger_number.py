@@ -1,12 +1,12 @@
-num1 = input ("Enter the 1st number:")
-num2 = input ("Enter the 2nd number:")
+num1 = float(input ("Enter the 1st number: "))
+num2 = float(input ("Enter the 2nd number: "))
 
 if num1 > num2:
-    print (num1, " is bigger")
+    print (num1, " is bigger.")
     
 elif num2 > num1:
-    print (num2, " is bigger")
+    print (num2, " is bigger.")
     
 else:
-    print ("both numbers are equal")
+    print ("Both numbers are equal.")
         
