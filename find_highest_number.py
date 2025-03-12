@@ -1,7 +1,9 @@
-#ask for num
+numbers = []
 
-#track highest num
-
-#stop when invalid input
-
-#print the highest num
+while True: 
+    try:
+        num = float(input("Enter a number: "))
+        numbers.append(num)
+    except ValueError:
+            break
+print(max(numbers))

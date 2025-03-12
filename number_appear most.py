@@ -1,7 +1,16 @@
-#cont asking for num
+numbers = []
 
-#count the times numbers show
+while True: 
+    try:
+        num = float(input("Enter a number: "))
+        numbers.append(num)
+    except ValueError:
+            break
 
-#stop invlaid inout
+if numbers:
+     max_count = max(numbers.count(n) for n in numbers)
+     most_frequent = sorted({n for n in numbers if numbers.count(n) == max_count})
+     print(most_frequent)
 
-#print the num appear the most
+else:
+     print("No numbers entered.")

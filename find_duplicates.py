@@ -1,7 +1,5 @@
-#ask 10 input
+numbers = [float(input(f"Enter number {i + 1}: "))for i in range(10)]
 
-#store
+duplicates = [num for num in numbers if numbers.count(num) > 1]
 
-#find repeated numbers
-
-#print
+print(duplicates)

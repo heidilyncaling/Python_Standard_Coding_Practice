@@ -1,7 +1,11 @@
-#ask inputs
+numbers = []
 
-#add add, and bilang inputs
-
-#display average kada input
-
-#stop when invalid input
+while True: 
+    try:
+        num = float(input("Enter a number: "))
+        numbers.append(num)
+    except ValueError:
+            break
+    
+average = sum(numbers) / len(numbers)
+print(average)
