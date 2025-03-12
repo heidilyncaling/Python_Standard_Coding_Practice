@@ -1,7 +1,14 @@
-#Ask for numbers
+numbers = []
 
-#Checi if num if duplicate
+while True: 
+    try:
+        num = float(input("Enter a number: "))
+        
+        if num in numbers:
+            print("Duplicate")
+        else:
+            print("Unique")
+            numbers.append(num)
 
-#Print "unique" if new, "duplicate" if repeat
-
-#stop daw pag invalid input
+    except ValueError:
+            break
